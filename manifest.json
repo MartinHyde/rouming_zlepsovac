@@ -1,0 +1,18 @@
+{
+
+  "description": "Resize pictures on rouming.cz and roumenovomaso.cz to fit on page. Add navigation to next and previous picture by pressing K and L keys.",
+  "manifest_version": 2,
+  "name": "Rouming zlepšovač",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/resize-button.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.rouming.cz/*", "*://*.roumenovomaso.cz/*"],
+      "js": ["resize.js"]
+    }
+  ]
+
+}
